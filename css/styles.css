@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-area {
+    margin: 20px 0;
+}
+
+.text-area__caption {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1c2036;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.original-array, .rezult-array {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1c2036;
+    vertical-align: middle;
+    height: 38px;
+}
+
+.attention-note {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #637f83;
+    font-size: 11px;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+}
