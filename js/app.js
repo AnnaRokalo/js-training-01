@@ -106,9 +106,6 @@
         //average of even
         average = averageOfEven(arr);
         resAverage.innerHTML = average;
-
-
-
     });
 
 })();

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>JS-training task 1</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Mono:300,400,500,700|Roboto:300,400,500,700" rel="stylesheet">
 </head>
 <body>
     <div class="page">
@@ -35,10 +35,28 @@
             <div class="text-area ">
                 <span class="text-area__caption">Среднее арифметическое: </span><span class="text-area__text box average-result"></span>
             </div>
-
+            <h3>6. Игрушка Робот. Робот двигается при нажатии на кнопку "Go", меняет направление движения при нажатии на стрелки.
+                В окне справа можно видеть отчет о изменении координат и направления движения. Координаты перемещения не могут быть отрицательными</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Это Вилли.</span><span class="robot-icon"></span>
+            </div>
+            <div class="text-area">
+                <span class="text-area__caption">
+                     Управляйте его перемещением, нажимая на кнопки.
+                </span>
+            </div>
+            <div class="robot-ctrl-panel">
+                <div class="robot-ctrl-panel__buttons">
+                    <div class="robot-ctrl-panel__btn move-btn"></div>
+                    <div class="robot-ctrl-panel__btn left-btn"></div>
+                    <div class="robot-ctrl-panel__btn right-btn"></div>
+                </div>
+                <div class="robot-ctrl-panel__report"></div>
+            </div>
         </section>
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/robot.js"></script>
 </body>
 </html>

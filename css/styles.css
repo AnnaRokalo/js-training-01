@@ -62,3 +62,80 @@ h3 {
     margin: 0 0 25px;
     text-transform: uppercase;
 }
+
+.robot-icon {
+    display:  inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    background: url(../img/robot-icon.svg) no-repeat 50% 50%;
+    background-size: contain;
+    position: relative;
+}
+
+.robot-ctrl-panel {
+    display: block;
+    zoom: 1;
+}
+
+.robot-ctrl-panel:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.robot-ctrl-panel__buttons {
+    position: relative;
+    width: 90px;
+    height: 100px;
+    float: left;
+}
+
+.robot-ctrl-panel__btn {
+    width: 30px;
+    height: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: 1px solid #000;
+}
+
+.move-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: calc(50% - 15px);
+    background-image: url(../img/go.svg);
+}
+
+.left-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../img/arrow-left.svg);
+}
+
+.right-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: inherit;
+    right: 0;
+    background-image: url(../img/arrow-left.svg);
+    transform: scaleX(-1);
+}
+
+.robot-ctrl-panel__report {
+    border: 1px solid #000;
+    padding: 20px 10px;
+    margin-left: 150px;
+    width: 80%;
+    height: 120px;
+    overflow: auto;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+}
