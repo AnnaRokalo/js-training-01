@@ -17,6 +17,12 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .text-area {
     margin: 20px 0;
 }
@@ -31,16 +37,20 @@ h2 {
     margin-right: 10px;
 }
 
-.original-array, .rezult-array {
+.box {
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #ccc;
+    vertical-align: middle;
+    height: 38px;
+}
+
+.text-area__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #1c2036;
-    vertical-align: middle;
-    height: 38px;
+
 }
 
 .attention-note {

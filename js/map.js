@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    function mapArray(collection, predicate) {
+    function mapArray(array, callback) {
         var result = [];
-        collection.forEach(function(value, key, collection) {
-                result.push(predicate(value));
+        array.forEach(function(value, key, array) {
+                result.push(callback(value));
 
         });
         return result;

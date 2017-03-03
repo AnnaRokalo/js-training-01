@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    function averageOfEven(collection) {
+    function averageOfEven(array) {
         var sum = 0, count = 0;
-        collection.forEach(function(value, key, collection) {
+        array.forEach(function(value, key, array) {
             if (value%2== 0) {
                 count++;
                 sum+=value;

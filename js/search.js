@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    function searchItem(collection, predicate) {
+    function searchItem(array, condition) {
         var result;
-        collection.every(function(value, key, collection) {
-            if (predicate(value)) {
+        array.every(function(value, key, array) {
+            if (condition(value)) {
                 result = value;
                 return false;
             }

@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <title>JS-training task 1</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet">
 </head>
 <body>
     <div class="page">
-        <section id="sort">
-            <h2>1. Сортировака массива</h2>
+        <section>
+            <h2>JS training task 1</h2>
             <div class="attention-note"> !!! Все введенные нечисловые символы, кроме разделителя пробела, преобразуются в 0.</div>
-            <button class="btn-sort">Отсортировать массив</button>
+            <button class="btn-get-arr">Введите массив</button>
             <div class="text-area">
-                <span class="text-area__caption">Вы ввели: </span><span class="original-array"></span>
+                <span class="text-area__caption">Вы ввели: </span><span class="text-area__text box original-array"></span>
+            </div>
+            <h3>1. Отсортировать массив</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Отсортированный массив: </span><span class="text-area__text box sorted-array"></span>
+            </div>
+            <h3>2. Поиск первого подходящего под условие элемента массива, условие передается параметром в функцию поиска. Например, найти первый отрицательный элемент.</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Найденный элемент: </span><span class="text-area__text box search-result"></span>
+            </div>
+            <h3>3. Отфильтровать массив, условие передается параметром в функцию фильтра. Например, показать все положительные элементы массива.</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Отфильтрованный массив: </span><span class="text-area__text box filtered-array"></span>
+            </div>
+            <h3>4. Map.  Например, увеличить каждый элемент в 2 раза.</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Результирующий массив: </span><span class="text-area__text box mapped-array"></span>
+            </div>
+            <h3>5. Найти среднее арифметическое всех четных элементов массива.</h3>
+            <div class="text-area ">
+                <span class="text-area__caption">Среднее арифметическое: </span><span class="text-area__text box average-result"></span>
             </div>
 
-            <div class="text-area ">
-                <span class="text-area__caption">Отсортированный массив: </span><span class="rezult-array"></span>
-            </div>
-        </section>
-        <section id="search">
-            <h2>1. Сортировака массива</h2>
-            <div class="attention-note"> !!! Все введенные нечисловые символы, кроме разделителя пробела, преобразуются в 0.</div>
-            <button class="btn-sort">Отсортировать массив</button>
-            <div class="text-area">
-                <span class="text-area__caption">Вы ввели: </span><span class="original-array"></span>
-            </div>
-
-            <div class="text-area ">
-                <span class="text-area__caption">Отсортированный массив: </span><span class="rezult-array"></span>
-            </div>
         </section>
     </div>
 
-    <script src="js/sort.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/average-value.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

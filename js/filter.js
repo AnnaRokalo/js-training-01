@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    function filterArray(collection, predicate) {
+    function filterArray(array, callback) {
         var result = [];
-        collection.forEach(function(value, key, collection) {
-            if (predicate(value)) {
+        array.forEach(function(value, key, array) {
+            if (callback(value)) {
                 result.push(value);
             }
         });
