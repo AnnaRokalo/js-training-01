@@ -34,7 +34,8 @@ h3 {
     line-height: 18px;
     color: #1c2036;
     vertical-align: middle;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
+    padding: 0;
 }
 
 .box {
@@ -50,7 +51,6 @@ h3 {
     font-size: 13px;
     line-height: 18px;
     color: #1c2036;
-
 }
 
 .attention-note {
