@@ -2,7 +2,8 @@
     'use strict';
 
 //sorting array
-    function sortArray(arr) { // gnome sorting
+    // gnome sorting
+    function sortArray(arr) {
         var rez = arr.slice();
         var i = 1;
         while(i < rez.length) {
@@ -16,6 +17,53 @@
             }
         }
         return rez;
+    }
+
+    // quick sorting
+    function swap(items, firstIndex, secondIndex){
+        var temp = items[firstIndex];
+        items[firstIndex] = items[secondIndex];
+        items[secondIndex] = temp;
+    }
+
+    function partition(items, left, right) {
+        var pivot   = items[Math.floor((right + left) / 2)], //find elem with middle index
+            i       = left,
+            j       = right;
+
+        while (i <= j) {
+            while (items[i] < pivot) {
+                i++;
+            }
+            while (items[j] > pivot) {
+                j--;
+            }
+            if (i <= j) {
+                swap(items, i, j);
+                i++;
+                j--;
+            }
+        }
+
+        return i;
+    }
+
+    function quickSort(array, left, right) {
+        var index;
+
+        if (array.length > 1) {
+            index = partition(array, left, right);
+
+            if (left < index - 1) {
+                quickSort(array, left, index - 1);
+            }
+
+            if (index < right) {
+                quickSort(array, index, right);
+            }
+        }
+
+        return array;
     }
 
 //search elem according to condition
@@ -67,9 +115,10 @@
 
     var getDataBtn = document.querySelector('.btn-get-arr');
     getDataBtn.addEventListener('click', function(e) {
-        var arr, resArr, foundEl, resArrFilter, resArrMap, average;
+        var arr, resArrGnomeSort, resArrQuickSort, foundEl, resArrFilter, resArrMap, average;
         var inputArr = document.querySelector('.original-array');
-        var resText = document.querySelector('.sorted-array');
+        var resGnomeSortText = document.querySelector('.gnome-sorted-array');
+        var resQuickSortText = document.querySelector('.quick-sorted-array');
         var resSearch = document.querySelector('.search-result');
         var resFilter = document.querySelector('.filtered-array');
         var resMap = document.querySelector('.mapped-array');
@@ -85,8 +134,11 @@
             else arr[j] =  +arr[j];
         }
         //sorting
-        resArr = sortArray(arr);
-        resText.innerHTML  ='[' + resArr.join('] [') + ']';
+        resArrGnomeSort = sortArray(arr);
+        resArrQuickSort = quickSort(arr, 0, arr.length - 1);
+        resGnomeSortText.innerHTML  ='[' + resArrGnomeSort.join('] [') + ']';
+        resQuickSortText.innerHTML = '[' + resArrQuickSort.join('] [') + ']';
+
         //search
         foundEl = searchItem(arr, function(value){
             return (value < 0);
